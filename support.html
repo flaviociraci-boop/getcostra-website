@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Costra</title>
+<link rel="icon" href="img/favicon.png">
+<style>
+  :root { color-scheme: light dark; --fg:#0B0C0C; --muted:#5C6160; --bg:#F4F6F5; --card:#FFFFFF; --accent:#0B0C0C; --on-accent:#FFFFFF; --border:#E0E4E3; }
+  @media (prefers-color-scheme: dark) { :root { --fg:#F2F4F3; --muted:#9BA1A0; --bg:#000000; --card:#141616; --accent:#F2F4F3; --on-accent:#0A0B0B; --border:#282C2B; } }
+  * { box-sizing: border-box; }
+  body { margin:0; padding:2.5rem 1.25rem 5rem; background:var(--bg); color:var(--fg);
+         font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; }
+  main { max-width: 46rem; margin: 0 auto; }
+  h1 { font-size: 1.9rem; line-height:1.2; margin:0 0 .4rem; letter-spacing:-.02em; }
+  h2 { font-size: 1.15rem; margin:2rem 0 .5rem; }
+  .lede { color: var(--muted); margin-top:0; }
+  .card { background:var(--card); border:1px solid var(--border); border-radius:14px; padding:1rem 1.15rem; margin:1.2rem 0; }
+  .card p:last-child, .card ul:last-child { margin-bottom:0; }
+  ul { padding-left: 1.15rem; }
+  a { color: var(--accent); }
+  .mail { display:inline-block; margin-top:.4rem; padding:.7rem 1.1rem; background:var(--accent); color:var(--on-accent);
+          border-radius:10px; text-decoration:none; font-weight:600; }
+  footer { margin-top:3rem; padding-top:1.2rem; border-top:1px solid var(--border); color:var(--muted); font-size:.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Costra — Hilfe &amp; Kontakt</h1>
+  <p class="lede">Fragen, Fehler, Wünsche? Schreib einfach. Antwort kommt in der Regel innerhalb von
+  zwei Werktagen.</p>
+  <a class="mail" href="mailto:support@getcostra.app">support@getcostra.app</a>
+
+  <h2>Häufige Fragen</h2>
+
+  <div class="card">
+    <p><strong>Wo liegen meine Daten?</strong><br>
+    Auf deinem Gerät. Ein Konto brauchst du nur, wenn du Kosten mit jemandem teilst — dann
+    liegt genau dieses geteilte Abo auf einem Server in Frankfurt, sonst nichts. Das bedeutet auch:
+    Ohne Export sind deine Daten weg, wenn das Gerät verloren geht. Sicherung über
+    <em>Profil → Daten exportieren</em>.</p>
+  </div>
+
+  <div class="card">
+    <p><strong>Der Kontoauszug-Import findet nichts.</strong><br>
+    Meist ist der Zeitraum zu kurz: Ein einzelner Monat kann keinen Rhythmus zeigen. Wähle beim
+    Export 12 Monate — oder bei monatlichen PDF-Auszügen gleich mehrere Monate zusammen aus. Läuft
+    ein Abo über PayPal, hilft zusätzlich der PayPal-Kontoauszug.</p>
+  </div>
+
+  <div class="card">
+    <p><strong>„Dieses PDF ist mit einem Passwort geschützt.“</strong><br>
+    Öffne das PDF einmal mit dem Passwort und speichere es ohne Schutz — oder nutze den
+    CSV-Export deiner Bank. Eingescannte Auszüge (reine Bilder ohne markierbaren Text) kann Costra
+    nicht lesen.</p>
+  </div>
+
+  <div class="card">
+    <p><strong>Meine Bank steht nicht in der Liste.</strong><br>
+    Wähle „Andere Bank“. Costra erkennt die gängigen CSV-Formate automatisch und liest zusätzlich
+    PDF-Kontoauszüge. Schreib uns gern, welche Bank fehlt — dann kommt eine Anleitung dafür dazu.</p>
+  </div>
+
+  <div class="card">
+    <p><strong>Ich habe Pro gekauft, es ist aber nicht aktiv.</strong><br>
+    Öffne die Pro-Seite in der App und tippe auf <em>Käufe wiederherstellen</em>. Achte darauf, mit
+    demselben Apple-Konto angemeldet zu sein, mit dem gekauft wurde.</p>
+  </div>
+
+  <div class="card">
+    <p><strong>Wie kündige ich Costra Pro?</strong><br>
+    In den Einstellungen deines Geräts unter <em>Apple-ID → Abonnements</em>. Jederzeit, ohne Frist.
+    Deine erfassten Einträge bleiben dir danach erhalten.</p>
+  </div>
+
+  <div class="card">
+    <p><strong>Muss ich den KI-Assistenten nutzen?</strong><br>
+    Nein, er ist standardmäßig aus. Ohne hinterlegten Schlüssel verlässt kein Text dein Gerät.
+    Details in der <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+  </div>
+
+  <footer>
+    <a href="./">Costra</a> · Bodensee-Spiele GmbH ·
+    <a href="datenschutz.html">Datenschutz</a> · <a href="nutzungsbedingungen.html">Nutzungsbedingungen</a>
+  </footer>
+</main>
+</body>
+</html>

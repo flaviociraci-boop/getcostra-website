@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datenschutzerklärung — Costra</title>
+<link rel="icon" href="img/favicon.png">
+<style>
+  :root { color-scheme: light dark; --fg:#0B0C0C; --muted:#5C6160; --bg:#F4F6F5; --card:#FFFFFF; --accent:#0B0C0C; --on-accent:#FFFFFF; --border:#E0E4E3; }
+  @media (prefers-color-scheme: dark) { :root { --fg:#F2F4F3; --muted:#9BA1A0; --bg:#000000; --card:#141616; --accent:#F2F4F3; --on-accent:#0A0B0B; --border:#282C2B; } }
+  * { box-sizing: border-box; }
+  body { margin:0; padding:2.5rem 1.25rem 5rem; background:var(--bg); color:var(--fg);
+         font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; }
+  main { max-width: 46rem; margin: 0 auto; }
+  h1 { font-size: 1.9rem; line-height:1.2; margin:0 0 .4rem; letter-spacing:-.02em; }
+  h2 { font-size: 1.2rem; margin:2.4rem 0 .6rem; letter-spacing:-.01em; }
+  p, li { color: var(--fg); }
+  .lede { color: var(--muted); margin-top:0; }
+  .card { background:var(--card); border:1px solid var(--border); border-radius:14px; padding:1rem 1.15rem; margin:1.2rem 0; }
+  .card p:last-child, .card ul:last-child { margin-bottom:0; }
+  ul { padding-left: 1.15rem; }
+  a { color: var(--accent); }
+  footer { margin-top:3rem; padding-top:1.2rem; border-top:1px solid var(--border); color:var(--muted); font-size:.9rem; }
+  code { background:var(--card); padding:.1em .35em; border-radius:5px; font-size:.9em; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Datenschutzerklärung</h1>
+  <p class="lede">Für die App <strong>Costra</strong>. Stand: 12. November 2026.</p>
+
+  <div class="card">
+    <p><strong>Kurzfassung:</strong> Costra speichert deine Abos, Verträge und Beträge auf deinem
+    Gerät. Ein Konto ist <strong>freiwillig</strong> und wird nur gebraucht, wenn du Kosten mit
+    anderen Menschen teilen willst. Wer das nicht tut, legt nie ein Konto an — dann verlässt
+    nichts das Gerät.</p>
+    <p>Teilst du ein Abo, wird <strong>genau dieses eine Abo</strong> übertragen, damit der andere
+    seinen Anteil sehen kann. Deine übrigen Abos bleiben auch dann lokal.</p>
+  </div>
+
+  <h2>1. Verantwortlicher</h2>
+  <p>
+    Bodensee-Spiele GmbH<br>
+    c/o Ciraci Flavio, Hauptstrasse 4, 8280 Kreuzlingen (TG), Schweiz<br>
+    E-Mail: <a href="mailto:support@getcostra.app">support@getcostra.app</a>
+  </p>
+
+  <h2>2. Welche Daten die App verarbeitet</h2>
+  <p>Alles, was du in Costra eingibst — Abonamen, Beträge, Termine, Vertragsnummern, Namen von
+  Personen, mit denen du Kosten teilst, sowie Notizen — wird <strong>lokal auf deinem Gerät</strong>
+  gespeichert. Diese Daten werden nicht an uns und nicht an Dritte übertragen. Die einzige
+  Ausnahme sind Abos, die du ausdrücklich mit jemandem teilst — dazu Abschnitt 5.</p>
+  <p>Ein optionaler API-Schlüssel für den KI-Assistenten wird im <strong>Schlüsselbund des Geräts</strong>
+  (iOS Keychain / Android Keystore) abgelegt, nicht in den App-Daten. Datenexporte enthalten ihn nicht.</p>
+
+  <h2>3. Kontoauszug-Import</h2>
+  <p>Wenn du einen Kontoauszug importierst (CSV oder PDF), wird die Datei
+  <strong>ausschließlich auf deinem Gerät</strong> gelesen. Sie wird nicht hochgeladen, nicht an uns
+  gesendet und nach dem Auswerten aus dem Zwischenspeicher der App gelöscht. Aus dem Auszug
+  übernommen wird nur, was du selbst bestätigst.</p>
+
+  <h2>4. KI-Assistent (optional, standardmäßig aus)</h2>
+  <p>Costra kann eine formlose Vertragsbeschreibung in strukturierte Daten umwandeln. Diese Funktion
+  ist <strong>ausgeschaltet</strong>, solange du keinen eigenen API-Schlüssel hinterlegst.</p>
+  <div class="card">
+    <p><strong>Transparenzhinweis nach Art. 50 der KI-Verordnung (EU) 2024/1689:</strong> Dieser
+    Assistent ist ein KI-System. Es verarbeitet ausschließlich den Text, den du selbst eingibst, und
+    erzeugt daraus einen <em>Vorschlag</em> für die Felder eines Eintrags. Der Vorschlag wird dir vor
+    dem Speichern angezeigt und ausdrücklich als KI-Vorschlag gekennzeichnet; gespeichert wird er
+    erst, wenn du ihn bestätigst. Es findet keine automatisierte Entscheidung über dich statt, keine
+    Bewertung deiner Person und keine Emotionserkennung.</p>
+    <p>Alle übrigen Funktionen von Costra — insbesondere das Erkennen wiederkehrender Zahlungen im
+    Kontoauszug, der Costra Score und sämtliche Auswertungen — arbeiten <strong>ohne KI</strong>.
+    Sie folgen fest programmierten Regeln, die jederzeit nachvollziehbar sind; der Score weist jeden
+    Punktabzug im Klartext aus.</p>
+  </div>
+  <p>Wenn du sie nutzt, wird <strong>nur der Text, den du selbst in das KI-Feld tippst</strong>, an
+  Google (Gemini API, Google Ireland Limited) übertragen und dort verarbeitet. Deine gespeicherten
+  Abos, Beträge und Kontaktnamen werden dabei <em>nicht</em> mitgesendet.</p>
+  <div class="card">
+    <p><strong>Wichtig und oft verschwiegen:</strong> In Googles kostenlosem Kontingent verwendet
+    Google die übermittelten Texte zur Verbesserung seiner Modelle. Wenn du dort Daten Dritter
+    (z. B. Kundendaten) einträgst, solltest du in der Google-Cloud-Konsole auf ein kostenpflichtiges
+    Projekt wechseln — dort ist diese Nutzung ausgeschlossen. Derselbe Hinweis steht in der App.</p>
+  </div>
+  <p>Rechtsgrundlage ist deine Einwilligung (Art. 6 Abs. 1 lit. a DSGVO), erteilt durch das
+  Hinterlegen des Schlüssels und das aktive Absenden eines Textes. Du kannst sie jederzeit
+  widerrufen, indem du den Schlüssel im Profil entfernst.</p>
+
+  <h2>5. Konto und geteilte Abos (optional)</h2>
+  <p>Für geteilte Kosten kannst du ein Konto anlegen. Verarbeitet werden dann:</p>
+  <ul>
+    <li><strong>E-Mail-Adresse und Passwort</strong> — zur Anmeldung. Das Passwort wird nur als
+      kryptografischer Hash gespeichert, nie im Klartext.</li>
+    <li><strong>Anzeigename und Kürzel</strong> — damit Freunde dich erkennen und finden.
+      Beides wählst du selbst; ein Klarname ist nicht nötig, ein Spitzname genügt.</li>
+    <li><strong>Geteilte Abos</strong> — Name, Betrag, Intervall und Termin der Abos, die du
+      ausdrücklich teilst, samt den Anteilen der Beteiligten und dem Stand der Begleichungen.</li>
+    <li><strong>Nachrichten</strong>, die du im Chat zu einem geteilten Abo schreibst.</li>
+  </ul>
+  <p>Diese Daten liegen bei <strong>Supabase</strong> (Server in Frankfurt am Main, EU).
+  Rechtsgrundlage: Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO) — ohne diese Daten kann die
+  Funktion nicht erbracht werden.</p>
+  <div class="card">
+    <p><strong>Wer was sehen kann:</strong> Ein geteiltes Abo sieht ausschließlich, wer daran
+    beteiligt ist. Profile sind nicht durchsuchbar — Freunde findet man nur über das exakte
+    Kürzel, das du selbst weitergibst. Es gibt keine Nutzerliste. Technisch durchgesetzt wird
+    das über Zugriffsregeln in der Datenbank, nicht über die App.</p>
+    <p><strong>Löschung:</strong> Meldest du dich ab, bleiben deine lokalen Daten unberührt.
+    Nimmst du eine Teilung zurück, verschwindet sie auch beim anderen. Dein gesamtes Konto
+    löschst du in der App unter <em>Profil → Konto verwalten → Konto endgültig löschen</em>:
+    Konto, Freundschaften, geteilte Abos und Nachrichten werden sofort und vollständig
+    entfernt. Deine Abos auf dem Gerät bleiben dabei erhalten.</p>
+  </div>
+
+  <h2>6. IBAN und Zahlungs-QR-Code</h2>
+  <p>Du kannst deine IBAN hinterlegen, damit Costra daraus einen QR-Code für eine
+  SEPA-Überweisung erzeugt. Die IBAN bleibt <strong>auf deinem Gerät</strong> und wird
+  ausschließlich in den QR-Code geschrieben, den du selbst herzeigst. Sie wird nicht an uns
+  übertragen und auch nicht mit dem Konto synchronisiert.</p>
+
+  <h2>7. Käufe (Costra Pro)</h2>
+  <p>Käufe werden über den App Store abgewickelt. Die Zahlung und deine Zahlungsdaten verarbeitet
+  Apple; wir erhalten weder Kartendaten noch deine Adresse. Zur Verwaltung des Kaufstatus nutzen wir
+  <strong>RevenueCat, Inc.</strong> (USA). Dabei wird eine zufällig erzeugte, anonyme Kennung
+  verarbeitet, die keiner Person zugeordnet werden kann; wir verknüpfen sie mit keinerlei
+  Bestandsdaten. Rechtsgrundlage: Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO).</p>
+
+  <h2>8. Mitteilungen</h2>
+  <p>Erinnerungen vor Abbuchungen sind <strong>lokale</strong> Benachrichtigungen. Sie werden auf dem
+  Gerät geplant und ausgelöst; es gibt keinen Push-Server und keine Übertragung.</p>
+
+  <h2>9. Kein Tracking</h2>
+  <p>Costra enthält <strong>keine</strong> Analyse-Werkzeuge, kein Crash-Tracking, keine Werbung und
+  keine Tracking-Pixel. Es wird kein Nutzungsverhalten erfasst und nichts an Werbenetzwerke
+  weitergegeben. Es findet kein App-übergreifendes Tracking im Sinne von Apples
+  „App Tracking Transparency“ statt.</p>
+
+  <h2>10. Deine Rechte</h2>
+  <p>Dir stehen die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit
+  und Widerspruch zu (Art. 15–21 DSGVO sowie Schweizer Datenschutzgesetz, DSG) sowie ein Beschwerderecht bei einer Aufsichtsbehörde — in der EU bei der Behörde deines Wohnlandes, in der Schweiz beim Eidgenössischen Datenschutz- und Öffentlichkeitsbeauftragten (EDÖB).</p>
+  <p>Deine lokalen Daten kannst du selbst und sofort ausüben: <em>Profil → Daten exportieren</em>
+  gibt dir alle Daten als Datei, <em>Profil → Alle Daten löschen</em> entfernt sie vollständig.
+  Auch das Deinstallieren der App löscht alle lokalen Daten.</p>
+  <p>Hast du ein Konto angelegt, löschst du es selbst in der App unter <em>Profil → Konto
+  verwalten → Konto endgültig löschen</em> — sofort und ohne Umweg über uns. Für Auskunft
+  oder Fragen erreichst du uns unter der oben genannten Adresse.</p>
+
+  <h2>11. Kinder</h2>
+  <p>Costra richtet sich nicht an Kinder unter 16 Jahren und erhebt wissentlich keine Daten von ihnen.</p>
+
+  <h2>12. Änderungen</h2>
+  <p>Wird diese Erklärung geändert, veröffentlichen wir die neue Fassung unter derselben Adresse mit
+  aktualisiertem Datum.</p>
+
+  <footer>
+    <a href="./">Costra</a> · <a href="support.html">Support</a> · <a href="nutzungsbedingungen.html">Nutzungsbedingungen</a>
+  </footer>
+</main>
+</body>
+</html>
