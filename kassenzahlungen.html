@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kassenzahlungen automatisch — Costra</title>
+<meta name="description" content="In einer Minute eingerichtet: Mit einer Kurzbefehle-Automation trägt Costra jede Zahlung mit dem iPhone an der Kasse selbst ein.">
+<link rel="icon" href="img/favicon.png">
+<!--
+  Anleitung zur Apple-Pay-Automatik (Costra Pro, seit 1.3). Die App verlinkt
+  hierher aus dem Blatt „Apple Pay verbinden". Das Video entsteht per Skript
+  aus einer Bildschirmaufnahme: marketing/anleitung/video.mjs im App-Repo.
+-->
+<style>
+  :root { color-scheme: light dark; --fg:#0B0C0C; --muted:#5C6160; --bg:#F4F6F5; --card:#FFFFFF; --accent:#0B0C0C; --on-accent:#FFFFFF; --border:#E0E4E3; --brand:#6C5CE7; }
+  @media (prefers-color-scheme: dark) { :root { --fg:#F2F4F3; --muted:#9BA1A0; --bg:#000000; --card:#141616; --accent:#F2F4F3; --on-accent:#0A0B0B; --border:#282C2B; --brand:#9C90F5; } }
+  * { box-sizing: border-box; }
+  body { margin:0; padding:2.5rem 1.25rem 5rem; background:var(--bg); color:var(--fg);
+         font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; }
+  main { max-width: 46rem; margin: 0 auto; }
+  h1 { font-size: 1.9rem; line-height:1.2; margin:0 0 .4rem; letter-spacing:-.02em; }
+  h2 { font-size: 1.15rem; margin:2rem 0 .5rem; }
+  .lede { color: var(--muted); margin-top:0; }
+  .eyebrow { font-size:.8rem; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--brand); margin:0 0 .4rem; }
+  .video { margin:1.6rem auto; max-width:24rem; }
+  .video video { display:block; width:100%; height:auto; border-radius:18px; border:1px solid var(--border); background:#F4F6F5; }
+  .video p { color:var(--muted); font-size:.9rem; text-align:center; margin:.6rem 0 0; }
+  .card { background:var(--card); border:1px solid var(--border); border-radius:14px; padding:1rem 1.15rem; margin:1.2rem 0; }
+  .card p:last-child, .card ol:last-child, .card ul:last-child { margin-bottom:0; }
+  ol, ul { padding-left: 1.3rem; }
+  ol li { margin:.35rem 0; }
+  a { color: var(--accent); }
+  footer { margin-top:3rem; padding-top:1.2rem; border-top:1px solid var(--border); color:var(--muted); font-size:.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <p class="eyebrow">Costra Pro</p>
+  <h1>Kassenzahlungen automatisch</h1>
+  <p class="lede">Einmal in der Kurzbefehle-App einrichten, dann trägt Costra jede Zahlung mit dem iPhone an
+  der Kasse selbst ein. Dauert eine Minute. Nichts verlässt dein iPhone.</p>
+
+  <div class="video">
+    <video src="video/kassenzahlungen.mp4" poster="img/kassenzahlungen-poster.jpg"
+           autoplay muted loop controls playsinline preload="metadata" width="1080" height="1920"></video>
+    <p>44 Sekunden</p>
+  </div>
+
+  <h2>Schritt für Schritt</h2>
+  <div class="card">
+    <ol>
+      <li>Öffne die App <strong>Kurzbefehle</strong>, tippe unten auf <strong>Automation</strong> und oben auf <strong>+</strong>.</li>
+      <li>Wähle <strong>Wallet</strong> und deine Karten. Kategorien angehakt lassen, keine Händler filtern.
+        Dann <strong>Sofort ausführen</strong> und <strong>Weiter</strong>.</li>
+      <li>Tippe auf <strong>Neuen Kurzbefehl erstellen</strong>, suche <strong>Ausgabe erfassen</strong> und wähle die Aktion von Costra.</li>
+      <li>Tippe bei <strong>Betrag</strong> ins Feld, wähle über der Tastatur <strong>Kurzbefehleingabe</strong>,
+        tippe auf das blaue Feld und wähle <strong>Betrag</strong>.</li>
+      <li>Bei <strong>Händler</strong> genauso, nur mit <strong>Händler</strong>. Zum Schluss oben rechts auf das Häkchen.</li>
+    </ol>
+  </div>
+
+  <h2>Gut zu wissen</h2>
+  <div class="card">
+    <ul>
+      <li><strong>Steht bei Betrag nur „Transaktion“?</strong> Dann fehlt Schritt 4: aufs blaue Feld tippen und „Betrag“ auswählen.
+        Sonst kommt kein lesbarer Betrag in Costra an.</li>
+      <li><strong>Lege die Automation nur einmal an.</strong> Gibt es sie zweimal, wird jede Zahlung doppelt erfasst.</li>
+      <li><strong>Erfasst werden Zahlungen mit dem iPhone an der Kasse.</strong> Online-Käufe, PayPal und Bargeld
+        trägst du in Costra mit „+ Ausgabe“ ein.</li>
+      <li>Die Automation gehört zu <strong>Costra Pro</strong>. Die Tageszahl und das Eintragen von Hand sind kostenlos.</li>
+    </ul>
+  </div>
+
+  <footer>
+    <a href="./">Costra</a> · <a href="support.html">Hilfe &amp; Kontakt</a> ·
+    <a href="mailto:support@getcostra.app">support@getcostra.app</a> ·
+    <a href="datenschutz.html">Datenschutz</a> · <a href="impressum.html">Impressum</a>
+  </footer>
+</main>
+</body>
+</html>
