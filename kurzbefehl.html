@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kurzbefehl laden — Costra</title>
+<link rel="icon" href="img/favicon.png">
+<!--
+  Leitet zum Kurzbefehl „Costra Kassenzahlung" in iCloud weiter (seit 1.3).
+  Die App öffnet nur diese Adresse, nie den iCloud-Link selbst: Baut der Inhaber
+  den Kurzbefehl neu, bekommt er einen neuen iCloud-Link — dann wird nur er
+  hier ausgetauscht (an beiden Stellen unten), ohne neuen App-Build.
+
+  Der Kurzbefehl: Text (Betrag) → Text (Händler) → „Ausgabe erfassen". Die
+  Text-Schritte sind nötig, weil Kurzbefehle den Betrag einer Zahlung sonst
+  nicht an Costra übergeben kann (Kassentests vom 21.–24.11.2026).
+-->
+<meta http-equiv="refresh" content="0; url=https://www.icloud.com/shortcuts/66a4df21abda4d6f9156b525e717f0f7">
+<script>location.replace('https://www.icloud.com/shortcuts/66a4df21abda4d6f9156b525e717f0f7');</script>
+<style>
+  :root { color-scheme: light dark; --fg:#0B0C0C; --muted:#5C6160; --bg:#F4F6F5; --accent:#0B0C0C; --on-accent:#FFFFFF; --border:#E0E4E3; }
+  @media (prefers-color-scheme: dark) { :root { --fg:#F2F4F3; --muted:#9BA1A0; --bg:#000000; --accent:#F2F4F3; --on-accent:#0A0B0B; --border:#282C2B; } }
+  body { margin:0; padding:3rem 1.25rem; background:var(--bg); color:var(--fg);
+         font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; text-align:center; }
+  main { max-width: 30rem; margin: 0 auto; }
+  h1 { font-size:1.5rem; margin:0 0 .5rem; }
+  p { color:var(--muted); }
+  a.knopf { display:inline-block; margin-top:.8rem; padding:.75rem 1.2rem; background:var(--accent); color:var(--on-accent);
+            border-radius:12px; text-decoration:none; font-weight:600; }
+  footer { margin-top:3rem; padding-top:1rem; border-top:1px solid var(--border); color:var(--muted); font-size:.9rem; }
+  footer a { color:var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Kurzbefehl „Costra Kassenzahlung“</h1>
+  <p>Du wirst zur Kurzbefehle-App weitergeleitet. Falls nicht, tippe hier:</p>
+  <a class="knopf" href="https://www.icloud.com/shortcuts/66a4df21abda4d6f9156b525e717f0f7">Kurzbefehl laden</a>
+  <p>Danach in der App Kurzbefehle unter „Automation“ eine Wallet-Automation anlegen und
+  „Costra Kassenzahlung“ auswählen. <a href="kassenzahlungen.html">Anleitung mit Video</a></p>
+  <footer>
+    <a href="./">Costra</a> · <a href="support.html">Hilfe &amp; Kontakt</a> ·
+    <a href="mailto:support@getcostra.app">support@getcostra.app</a> · <a href="impressum.html">Impressum</a>
+  </footer>
+</main>
+</body>
+</html>
